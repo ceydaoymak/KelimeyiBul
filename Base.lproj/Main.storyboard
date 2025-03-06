@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Page-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomePage" customModule="KelimeyiBul_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLM-Jg-gCA">
+                                <rect key="frame" x="119" y="532" width="155" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="53Q-dO-0RZ"/>
+                                    <constraint firstAttribute="width" constant="155" id="zkd-oP-uEE"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="5 Harfliler">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K5R-5U-ibX"/>
+                                    <segue destination="Tye-dI-idj" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Gog-TK-vZ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1b-5w-WdR">
+                                <rect key="frame" x="116.66666666666669" y="632" width="160" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="AJY-bn-RIk"/>
+                                    <constraint firstAttribute="height" constant="70" id="qGm-cS-fXq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="6 Harfliler">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wO5-FW-kOc"/>
+                                    <segue destination="Wkc-cf-k7A" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="dmk-B2-v7X"/>
+                                </connections>
+                            </button>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJy-X1-WDf">
+                                <rect key="frame" x="119" y="432" width="155" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="9Dn-hA-MVx"/>
+                                    <constraint firstAttribute="height" constant="70" id="baE-78-nG4"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="4 Harfliler">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                    <attributedString key="attributedSubtitle"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lhI-Je-vLy"/>
+                                    <segue destination="Cfm-gA-Lp4" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="XY3-sP-Gbj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" red="0.50353157709538821" green="0.59762707164346629" blue="0.79792203608247425" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="d1b-5w-WdR" secondAttribute="bottom" constant="150" id="IyP-uT-AGr"/>
+                            <constraint firstItem="hJy-X1-WDf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="avo-3i-bMG"/>
+                            <constraint firstItem="d1b-5w-WdR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="brY-C3-CoG"/>
+                            <constraint firstItem="wLM-Jg-gCA" firstAttribute="top" secondItem="hJy-X1-WDf" secondAttribute="bottom" constant="30" id="m9m-Ld-kIL"/>
+                            <constraint firstItem="wLM-Jg-gCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yJT-9e-XzY"/>
+                            <constraint firstItem="d1b-5w-WdR" firstAttribute="top" secondItem="wLM-Jg-gCA" secondAttribute="bottom" constant="30" id="ybo-Cr-vfb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="hJy-X1-WDf" id="phe-HR-q8Y"/>
+                        <outlet property="button2" destination="wLM-Jg-gCA" id="hHp-Qz-dnq"/>
+                        <outlet property="button3" destination="d1b-5w-WdR" id="2X6-Ch-8ud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="85"/>
+        </scene>
+        <!--Dort Harfliler Ekrani-->
+        <scene sceneID="a1m-S1-cKr">
+            <objects>
+                <viewController id="Cfm-gA-Lp4" customClass="DortHarflilerEkrani" customModule="KelimeyiBul_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LR0-Sj-3Bp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULq-Lp-WuB" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="123" y="190" width="64" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hc0-JB-j8d" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="205" y="190" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="62o-q1-39Z" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="287" y="190" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GH0-h9-6TD" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="41" y="392" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UsD-KG-g6c" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="123" y="272" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aCm-oN-fIC" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="205" y="272" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nd-3I-ZGP" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="287" y="272" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ags-Cs-pce" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="41" y="436.66666666666663" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xi3-Lj-mci" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="123" y="356" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adf-wI-ZBx" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="205" y="356" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BB4-bo-zZi" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="287" y="434.66666666666663" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KzH-Ql-SSP" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="41" y="481.33333333333326" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n2S-9n-LPI" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="123" y="442" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HEv-MV-YTE" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="205" y="442" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pys-St-XT1" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="287" y="479.33333333333326" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FnV-VR-Afi" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="42" y="526" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vV9-cC-95j" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="124" y="526" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fMZ-KT-hT7" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="206" y="526" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IdM-7m-6Ez" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="288" y="526" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRU-Sg-E3K">
+                                <rect key="frame" x="144.66666666666666" y="651" width="103.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="New Word"/>
+                                <connections>
+                                    <action selector="newWord:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="x0q-Ha-dIr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-PA-rsm">
+                                <rect key="frame" x="165.66666666666666" y="727" width="61.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="5f1-G3-Obz"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="zYY-w8-mPu"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JlT-AK-iQN" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="41" y="219" width="64" height="26.666666666666686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCc-Jd-HDu">
+                                <rect key="frame" x="30" y="82" width="333" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dDG-4G-Z1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eRt-id-wfc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eRt-id-wfc" firstAttribute="trailing" secondItem="vCc-Jd-HDu" secondAttribute="trailing" constant="30" id="AMG-9w-9dY"/>
+                            <constraint firstItem="vCc-Jd-HDu" firstAttribute="centerX" secondItem="nRU-Sg-E3K" secondAttribute="centerX" id="Mo8-jk-4ja"/>
+                            <constraint firstItem="n4j-PA-rsm" firstAttribute="centerX" secondItem="LR0-Sj-3Bp" secondAttribute="centerX" id="OMI-Yp-RyN"/>
+                            <constraint firstItem="vCc-Jd-HDu" firstAttribute="leading" secondItem="eRt-id-wfc" secondAttribute="leading" constant="30" id="Tq5-Ug-ijI"/>
+                            <constraint firstItem="vCc-Jd-HDu" firstAttribute="centerX" secondItem="n4j-PA-rsm" secondAttribute="centerX" id="e1B-Xh-9XP"/>
+                            <constraint firstItem="n4j-PA-rsm" firstAttribute="top" secondItem="nRU-Sg-E3K" secondAttribute="bottom" constant="41" id="f8Z-zX-aFv"/>
+                            <constraint firstItem="ULq-Lp-WuB" firstAttribute="top" secondItem="vCc-Jd-HDu" secondAttribute="bottom" constant="63" id="fUZ-qC-3GT"/>
+                            <constraint firstItem="eRt-id-wfc" firstAttribute="bottom" secondItem="n4j-PA-rsm" secondAttribute="bottom" constant="90" id="g34-c7-KOo"/>
+                            <constraint firstItem="vCc-Jd-HDu" firstAttribute="top" secondItem="eRt-id-wfc" secondAttribute="top" constant="82" id="tyh-Uk-N9I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="n4j-PA-rsm" id="rcF-5c-92V"/>
+                        <outlet property="label" destination="vCc-Jd-HDu" id="lGG-9D-BKE"/>
+                        <outlet property="newWord" destination="nRU-Sg-E3K" id="WRB-nP-uc1"/>
+                        <outletCollection property="letterBoxes" destination="HEv-MV-YTE" collectionClass="NSMutableArray" id="U9b-aO-hvd"/>
+                        <outletCollection property="letterBoxes" destination="ULq-Lp-WuB" collectionClass="NSMutableArray" id="SGL-tk-07u"/>
+                        <outletCollection property="letterBoxes" destination="hc0-JB-j8d" collectionClass="NSMutableArray" id="d3k-ON-BSq"/>
+                        <outletCollection property="letterBoxes" destination="62o-q1-39Z" collectionClass="NSMutableArray" id="ewA-0U-LAC"/>
+                        <outletCollection property="letterBoxes" destination="UsD-KG-g6c" collectionClass="NSMutableArray" id="WZj-Ww-s04"/>
+                        <outletCollection property="letterBoxes" destination="aCm-oN-fIC" collectionClass="NSMutableArray" id="peu-C8-yWR"/>
+                        <outletCollection property="letterBoxes" destination="JlT-AK-iQN" collectionClass="NSMutableArray" id="0xK-Ro-Bp0"/>
+                        <outletCollection property="letterBoxes" destination="6nd-3I-ZGP" collectionClass="NSMutableArray" id="SLG-ze-bfW"/>
+                        <outletCollection property="letterBoxes" destination="fMZ-KT-hT7" collectionClass="NSMutableArray" id="pIr-x1-2HM"/>
+                        <outletCollection property="letterBoxes" destination="adf-wI-ZBx" collectionClass="NSMutableArray" id="6EA-fZ-oaJ"/>
+                        <outletCollection property="letterBoxes" destination="Xi3-Lj-mci" collectionClass="NSMutableArray" id="Kt4-AJ-VPx"/>
+                        <outletCollection property="letterBoxes" destination="GH0-h9-6TD" collectionClass="NSMutableArray" id="59l-9O-usg"/>
+                        <outletCollection property="letterBoxes" destination="Ags-Cs-pce" collectionClass="NSMutableArray" id="63D-ez-ZDc"/>
+                        <outletCollection property="letterBoxes" destination="KzH-Ql-SSP" collectionClass="NSMutableArray" id="VhN-Cb-CWk"/>
+                        <outletCollection property="letterBoxes" destination="FnV-VR-Afi" collectionClass="NSMutableArray" id="8D0-9a-Ueh"/>
+                        <outletCollection property="letterBoxes" destination="vV9-cC-95j" collectionClass="NSMutableArray" id="NQu-EE-Vol"/>
+                        <outletCollection property="letterBoxes" destination="BB4-bo-zZi" collectionClass="NSMutableArray" id="QfT-je-DS3"/>
+                        <outletCollection property="letterBoxes" destination="pys-St-XT1" collectionClass="NSMutableArray" id="7rQ-nu-SjA"/>
+                        <outletCollection property="letterBoxes" destination="IdM-7m-6Ez" collectionClass="NSMutableArray" id="JGX-pd-Ap7"/>
+                        <outletCollection property="letterBoxes" destination="n2S-9n-LPI" collectionClass="NSMutableArray" id="Lpi-Jw-AWI"/>
+                        <segue destination="Tp5-PV-lAs" kind="presentation" identifier="gameover" id="Dfh-pY-ZDT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GOb-Dy-8nn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="961"/>
+        </scene>
+        <!--Bes Harfliler Ekrani-->
+        <scene sceneID="8sG-7C-aZP">
+            <objects>
+                <viewController id="Tye-dI-idj" customClass="BesHarflilerEkrani" customModule="KelimeyiBul_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XBT-Z5-meP">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-oI-Qwo">
+                                <rect key="frame" x="30" y="82" width="333" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kag-0c-MiY" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="16" y="186" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K6C-fh-3yE" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="243" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.62243679366660309" green="0.81588103171108528" blue="0.63591597178263415" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cau-o9-dC9" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="243" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MVV-vu-uzR" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="243" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N8T-9q-tTK" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="16" y="260" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="puL-fg-b34" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="325" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ohv-iS-sF3" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="325" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TT0-9M-Ym0" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="325" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4W-Fa-FWn" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="490" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6sl-Df-PeI" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="409" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mcO-ws-Q78" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="409" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rfn-TV-qS8" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="488" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAI-mt-WvY" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="535" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lM0-bQ-gyy" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="495" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dI3-ZA-s3H" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="495" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Auu-qP-xJb" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="533" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yya-fq-x1a" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="1" y="579" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wry-uu-6GJ" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="83" y="579" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Igk-eV-J00" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="579" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2jS-nu-vmy" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="247" y="579" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pTc-KF-IOa" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="241" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U28-y8-ShR" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="323" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f3r-9p-YVl" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="486" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wXN-yN-mIC" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="531" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ang-OI-WUQ" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="313" y="577" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6N-m5-bBX">
+                                <rect key="frame" x="165.66666666666666" y="726" width="61.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Tye-dI-idj" eventType="touchUpInside" id="8yb-RQ-d7b"/>
+                                    <action selector="back:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="eB5-3i-pnj"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Ysl-AH-Sr6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kz-qf-Fqw">
+                                <rect key="frame" x="144.66666666666666" y="650" width="103.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="New Word"/>
+                                <connections>
+                                    <action selector="newWord:" destination="Tye-dI-idj" eventType="touchUpInside" id="IJN-T3-UgP"/>
+                                    <action selector="newWord:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="cxa-bm-UGn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3BT-hk-NQk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4kz-qf-Fqw" firstAttribute="centerX" secondItem="XBT-Z5-meP" secondAttribute="centerX" id="Cfv-Vt-fNh"/>
+                            <constraint firstItem="3BT-hk-NQk" firstAttribute="trailing" secondItem="gHr-oI-Qwo" secondAttribute="trailing" constant="30" id="UBj-MS-Ff8"/>
+                            <constraint firstItem="gHr-oI-Qwo" firstAttribute="top" secondItem="3BT-hk-NQk" secondAttribute="top" constant="82" id="bce-vm-ML5"/>
+                            <constraint firstItem="A6N-m5-bBX" firstAttribute="top" secondItem="4kz-qf-Fqw" secondAttribute="bottom" constant="41" id="ber-VB-tnR"/>
+                            <constraint firstItem="gHr-oI-Qwo" firstAttribute="leading" secondItem="3BT-hk-NQk" secondAttribute="leading" constant="30" id="cfD-bL-R9Q"/>
+                            <constraint firstItem="3BT-hk-NQk" firstAttribute="bottom" secondItem="A6N-m5-bBX" secondAttribute="bottom" constant="91" id="q4c-DP-J1e"/>
+                            <constraint firstItem="A6N-m5-bBX" firstAttribute="centerX" secondItem="XBT-Z5-meP" secondAttribute="centerX" id="roc-xT-Iud"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="A6N-m5-bBX" id="cLX-Qc-U7f"/>
+                        <outlet property="label" destination="gHr-oI-Qwo" id="fA5-6Q-ezo"/>
+                        <outlet property="newWord" destination="4kz-qf-Fqw" id="8LV-O8-03t"/>
+                        <outletCollection property="letterBoxes" destination="ohv-iS-sF3" collectionClass="NSMutableArray" id="A7Z-g0-VNp"/>
+                        <outletCollection property="letterBoxes" destination="kag-0c-MiY" collectionClass="NSMutableArray" id="MnK-iO-iDm"/>
+                        <outletCollection property="letterBoxes" destination="N8T-9q-tTK" collectionClass="NSMutableArray" id="Sqw-dD-Eyw"/>
+                        <outletCollection property="letterBoxes" destination="T4W-Fa-FWn" collectionClass="NSMutableArray" id="ZSr-g6-MDM"/>
+                        <outletCollection property="letterBoxes" destination="ZAI-mt-WvY" collectionClass="NSMutableArray" id="UdD-0U-Fv3"/>
+                        <outletCollection property="letterBoxes" destination="yya-fq-x1a" collectionClass="NSMutableArray" id="SXw-Ne-K14"/>
+                        <outletCollection property="letterBoxes" destination="puL-fg-b34" collectionClass="NSMutableArray" id="qZk-ES-Kxj"/>
+                        <outletCollection property="letterBoxes" destination="6sl-Df-PeI" collectionClass="NSMutableArray" id="0Zz-Qd-q4h"/>
+                        <outletCollection property="letterBoxes" destination="pTc-KF-IOa" collectionClass="NSMutableArray" id="maM-zU-gfQ"/>
+                        <outletCollection property="letterBoxes" destination="ang-OI-WUQ" collectionClass="NSMutableArray" id="Gxi-RX-i4P"/>
+                        <outletCollection property="letterBoxes" destination="cau-o9-dC9" collectionClass="NSMutableArray" id="Au8-of-ubz"/>
+                        <outletCollection property="letterBoxes" destination="K6C-fh-3yE" collectionClass="NSMutableArray" id="R3x-8e-yyp"/>
+                        <outletCollection property="letterBoxes" destination="MVV-vu-uzR" collectionClass="NSMutableArray" id="q9O-Ao-B2w"/>
+                        <outletCollection property="letterBoxes" destination="TT0-9M-Ym0" collectionClass="NSMutableArray" id="8yW-Vg-Aiz"/>
+                        <outletCollection property="letterBoxes" destination="U28-y8-ShR" collectionClass="NSMutableArray" id="76g-4k-9F6"/>
+                        <outletCollection property="letterBoxes" destination="mcO-ws-Q78" collectionClass="NSMutableArray" id="OmX-hW-GgE"/>
+                        <outletCollection property="letterBoxes" destination="f3r-9p-YVl" collectionClass="NSMutableArray" id="Ms6-li-QTh"/>
+                        <outletCollection property="letterBoxes" destination="Rfn-TV-qS8" collectionClass="NSMutableArray" id="UC2-5l-xgz"/>
+                        <outletCollection property="letterBoxes" destination="wXN-yN-mIC" collectionClass="NSMutableArray" id="N7y-7Y-hmr"/>
+                        <outletCollection property="letterBoxes" destination="Auu-qP-xJb" collectionClass="NSMutableArray" id="k93-G4-hbp"/>
+                        <outletCollection property="letterBoxes" destination="2jS-nu-vmy" collectionClass="NSMutableArray" id="QhB-In-uUL"/>
+                        <outletCollection property="letterBoxes" destination="dI3-ZA-s3H" collectionClass="NSMutableArray" id="Ra3-mz-Bem"/>
+                        <outletCollection property="letterBoxes" destination="Igk-eV-J00" collectionClass="NSMutableArray" id="yIk-ed-NRu"/>
+                        <outletCollection property="letterBoxes" destination="lM0-bQ-gyy" collectionClass="NSMutableArray" id="WaJ-Vh-5lc"/>
+                        <outletCollection property="letterBoxes" destination="Wry-uu-6GJ" collectionClass="NSMutableArray" id="sP4-yJ-Y8l"/>
+                        <segue destination="Tp5-PV-lAs" kind="presentation" identifier="gameover2" id="foH-WD-5Ic"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6R-nc-v5f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="961"/>
+        </scene>
+        <!--Alti Harfliler Ekrani-->
+        <scene sceneID="vwy-gn-BUB">
+            <objects>
+                <viewController id="Wkc-cf-k7A" customClass="AltiHarflilerEkrani" customModule="KelimeyiBul_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qfd-nB-YIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV2-d8-5hN">
+                                <rect key="frame" x="30" y="80" width="333" height="27.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4jw-jr-kia" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="16" y="283" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="25X-ly-PEI" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="246" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uSV-fL-jOE" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="246" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NVp-Ud-XUl" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="246" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KL2-Ng-BxY" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="16" y="431" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfz-rb-8Zi" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="328" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jHB-Ba-EGB" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="328" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mmg-XE-z8n" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="328" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ke3-Ec-KUo" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="493" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NST-ea-bBg" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="412" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U5b-2y-TpY" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="412" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A5G-C9-Jgh" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="32" y="669" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-CD-wmX" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="538" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cZM-7u-fcX" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="82" y="498" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eEA-oY-ZuS" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="164" y="498" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Ff-bI-gBA" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="493" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6hU-73-ZZA" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="1" y="582" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rJ-G6-Z6B" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="83" y="582" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LNw-BE-cd8" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="165" y="582" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMF-fc-PrL" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="292" y="398" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Ym-3D-lcV" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="220" y="669" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VJN-lq-Lk7" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="292" y="564" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nNP-RM-Ftk" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="292" y="650" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sK-2S-XTE" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="293" y="734" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kC8-a9-EUm" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="246" y="145" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4os-Is-F1a" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="244" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t2K-Rk-E4p" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="326" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hy4-Hl-ieY" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="489" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MXG-is-Yco" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="312" y="534" width="64" height="26.666666666666742"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Hx-UN-zjk">
+                                <rect key="frame" x="165.66666666666666" y="727" width="61.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="EJb-34-8cn"/>
+                                    <action selector="back:" destination="Wkc-cf-k7A" eventType="touchUpInside" id="fOx-wU-I1S"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="cGl-nk-Drm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZ4-x4-2sL">
+                                <rect key="frame" x="144.66666666666666" y="650" width="103.66666666666666" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="New Word"/>
+                                <connections>
+                                    <action selector="newWord:" destination="Wkc-cf-k7A" eventType="touchUpInside" id="LG3-tr-7qh"/>
+                                    <action selector="newWord:" destination="Cfm-gA-Lp4" eventType="touchUpInside" id="WSI-wB-SJb"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3W-81-Sf7" customClass="CustomTextField" customModule="KelimeyiBul_" customModuleProvider="target">
+                                <rect key="frame" x="111" y="145" width="64" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rEe-N3-zCr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rEe-N3-zCr" firstAttribute="bottom" secondItem="8Hx-UN-zjk" secondAttribute="bottom" constant="90" id="Ohd-ZS-8cV"/>
+                            <constraint firstItem="rEe-N3-zCr" firstAttribute="trailing" secondItem="GV2-d8-5hN" secondAttribute="trailing" constant="30" id="ROy-G3-XjW"/>
+                            <constraint firstItem="UZ4-x4-2sL" firstAttribute="centerX" secondItem="Qfd-nB-YIZ" secondAttribute="centerX" id="Tkk-Y8-KEz"/>
+                            <constraint firstItem="GV2-d8-5hN" firstAttribute="top" secondItem="rEe-N3-zCr" secondAttribute="top" constant="80" id="Vet-lw-UXa"/>
+                            <constraint firstItem="GV2-d8-5hN" firstAttribute="centerX" secondItem="Qfd-nB-YIZ" secondAttribute="centerX" id="lmo-L2-e1A"/>
+                            <constraint firstItem="8Hx-UN-zjk" firstAttribute="top" secondItem="UZ4-x4-2sL" secondAttribute="bottom" constant="42" id="p0E-pG-taH"/>
+                            <constraint firstItem="8Hx-UN-zjk" firstAttribute="centerX" secondItem="Qfd-nB-YIZ" secondAttribute="centerX" id="sHB-OI-aHN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="back" destination="8Hx-UN-zjk" id="uD9-Zl-pWb"/>
+                        <outlet property="label" destination="GV2-d8-5hN" id="o2W-0b-bkO"/>
+                        <outlet property="newWord" destination="UZ4-x4-2sL" id="WjF-s6-1Vo"/>
+                        <outletCollection property="letterBoxes" destination="T3W-81-Sf7" collectionClass="NSMutableArray" id="Bvg-e9-M73"/>
+                        <outletCollection property="letterBoxes" destination="kC8-a9-EUm" collectionClass="NSMutableArray" id="1Fn-tQ-mVy"/>
+                        <outletCollection property="letterBoxes" destination="4os-Is-F1a" collectionClass="NSMutableArray" id="f9D-uV-diZ"/>
+                        <outletCollection property="letterBoxes" destination="NVp-Ud-XUl" collectionClass="NSMutableArray" id="U5e-56-b95"/>
+                        <outletCollection property="letterBoxes" destination="uSV-fL-jOE" collectionClass="NSMutableArray" id="E3f-kf-GSO"/>
+                        <outletCollection property="letterBoxes" destination="25X-ly-PEI" collectionClass="NSMutableArray" id="6aU-7H-eav"/>
+                        <outletCollection property="letterBoxes" destination="4jw-jr-kia" collectionClass="NSMutableArray" id="5ky-bi-jla"/>
+                        <outletCollection property="letterBoxes" destination="t2K-Rk-E4p" collectionClass="NSMutableArray" id="rYQ-nj-SOV"/>
+                        <outletCollection property="letterBoxes" destination="mmg-XE-z8n" collectionClass="NSMutableArray" id="yVA-ry-zhe"/>
+                        <outletCollection property="letterBoxes" destination="jHB-Ba-EGB" collectionClass="NSMutableArray" id="ltc-95-P4d"/>
+                        <outletCollection property="letterBoxes" destination="yfz-rb-8Zi" collectionClass="NSMutableArray" id="6Yk-nf-Zt6"/>
+                        <outletCollection property="letterBoxes" destination="rMF-fc-PrL" collectionClass="NSMutableArray" id="WnO-Vm-zEX"/>
+                        <outletCollection property="letterBoxes" destination="U5b-2y-TpY" collectionClass="NSMutableArray" id="Uqp-2v-sQh"/>
+                        <outletCollection property="letterBoxes" destination="NST-ea-bBg" collectionClass="NSMutableArray" id="61k-gH-H4y"/>
+                        <outletCollection property="letterBoxes" destination="KL2-Ng-BxY" collectionClass="NSMutableArray" id="qQo-aR-cUr"/>
+                        <outletCollection property="letterBoxes" destination="Ke3-Ec-KUo" collectionClass="NSMutableArray" id="Sbd-ad-RMY"/>
+                        <outletCollection property="letterBoxes" destination="cZM-7u-fcX" collectionClass="NSMutableArray" id="ewU-cd-UJR"/>
+                        <outletCollection property="letterBoxes" destination="eEA-oY-ZuS" collectionClass="NSMutableArray" id="y6M-Vs-qoX"/>
+                        <outletCollection property="letterBoxes" destination="MXG-is-Yco" collectionClass="NSMutableArray" id="kZ5-ge-L5C"/>
+                        <outletCollection property="letterBoxes" destination="nNP-RM-Ftk" collectionClass="NSMutableArray" id="L2K-aU-EOv"/>
+                        <outletCollection property="letterBoxes" destination="1Ym-3D-lcV" collectionClass="NSMutableArray" id="B8l-C7-7zr"/>
+                        <outletCollection property="letterBoxes" destination="2sK-2S-XTE" collectionClass="NSMutableArray" id="NjS-bP-Mqz"/>
+                        <outletCollection property="letterBoxes" destination="0Ff-bI-gBA" collectionClass="NSMutableArray" id="UJa-qo-RpC"/>
+                        <outletCollection property="letterBoxes" destination="hy4-Hl-ieY" collectionClass="NSMutableArray" id="Mv0-9Y-nXl"/>
+                        <outletCollection property="letterBoxes" destination="LNw-BE-cd8" collectionClass="NSMutableArray" id="fmK-M8-vPg"/>
+                        <outletCollection property="letterBoxes" destination="2rJ-G6-Z6B" collectionClass="NSMutableArray" id="7yo-Hr-IXM"/>
+                        <outletCollection property="letterBoxes" destination="VJN-lq-Lk7" collectionClass="NSMutableArray" id="D6Z-Or-07d"/>
+                        <outletCollection property="letterBoxes" destination="A5G-C9-Jgh" collectionClass="NSMutableArray" id="Pkz-Nw-mk3"/>
+                        <outletCollection property="letterBoxes" destination="6hU-73-ZZA" collectionClass="NSMutableArray" id="MwO-QF-eoM"/>
+                        <outletCollection property="letterBoxes" destination="fo4-CD-wmX" collectionClass="NSMutableArray" id="ILk-Lx-pDf"/>
+                        <segue destination="Tp5-PV-lAs" kind="presentation" identifier="gameover3" id="5PS-dt-RUL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FbE-2Y-lyl" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911" y="961"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bRV-3v-8Xs">
+            <objects>
+                <viewController id="Tp5-PV-lAs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P5q-vV-jSD">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="game over" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCP-Nr-NUd">
+                                <rect key="frame" x="156.66666666666666" y="410.66666666666669" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9jc-v2-G5p"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VCP-Nr-NUd" firstAttribute="centerX" secondItem="P5q-vV-jSD" secondAttribute="centerX" id="KbV-Yx-vFQ"/>
+                            <constraint firstItem="VCP-Nr-NUd" firstAttribute="centerY" secondItem="P5q-vV-jSD" secondAttribute="centerY" id="kxL-Z1-grY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qeM-87-Bwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920" y="1712"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dfh-pY-ZDT"/>
+        <segue reference="zYY-w8-mPu"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.49803921579999999" green="0.59366013456499989" blue="0.80000001190000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
